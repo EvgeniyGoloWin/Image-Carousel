@@ -2,6 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: yellow;
+    width: 100%;
+}
+
+.nav_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+}
+
+.icons {
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
+.icon_currency {
+    width: 150px;
+    height: 150px;
 }
 
 .slider {

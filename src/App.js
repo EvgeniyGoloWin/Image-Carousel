@@ -1,6 +1,10 @@
 import './App.css';
 import {useState} from "react";
 import {img} from "./constants/img";
+import money from './assets/icon/hrn.png';
+import ukr from './assets/icon/ukr.png';
+import famous from './assets/icon/famous.png';
+import currency from './assets/icon/valuta.png';
 
 const images = img;
 console.log(images)
@@ -18,7 +22,19 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Ukrainian hryvni</h1>
+        <header>
+            <nav>
+                <div className='nav_block'>
+                <img className='icons' src={ukr}/>
+                <div>Anthem of Ukraine</div>
+                    <img className='icons' src={famous}/>
+                <div>Famous Ukrainians</div>
+                    <img className='icons' src={money}/>
+                <div>About Ukraine</div>
+                </div>
+            </nav>
+        </header>
+     <img className='icon_currency' src={currency}/>
       <div className='slider'>
           {images.map((image,index)=>
             current === index && (
